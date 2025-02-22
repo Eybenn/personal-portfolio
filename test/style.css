@@ -167,4 +167,15 @@ section{
     font-style: italic;
 }
 
+.content p{
+    font-weight: 600;
+    color: #012a4a;
+}
 
+.content p a{
+    color: #013a63;   
+}
+
+.content p a:hover{
+    color: skyblue;
+}
