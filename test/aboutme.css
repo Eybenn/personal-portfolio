@@ -56,3 +56,7 @@ span.aboutme-text2{
     font-weight: bolder;
     font-size: 1rem;
 }
+
+div.content{
+    padding-left: 600px;
+}
