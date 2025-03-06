@@ -135,13 +135,13 @@ section{
 }
 
 .main-container .image img{
-    width: 100
+    width: 10%;
 }
 
 .main-container .content{
     color: #013a63;
     width: 40%;
-    min-height: 100px;
+    min-height: 10%;
 }
 
 .content h1{
@@ -152,6 +152,7 @@ section{
     color: skyblue;
     text-shadow: 0 0 10px #013a63;
     font-size: 2.7rem;
+    animation: slideInLeft 5s ease-in-out infinite;
 }
 
 .content .iam{
@@ -160,11 +161,37 @@ section{
     color: skyblue;
 }
 
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
 .content .iam span{
     font-size: 2.3rem;
     color: #013a63;
+    margin-left: .5%;
     text-shadow: 0 0 10px skyblue;
-    font-style: italic;
+    display: inline-flex;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(14) infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+    
 }
 
 .content p{
@@ -178,4 +205,10 @@ section{
 
 .content p a:hover{
     color: skyblue;
+    animation: flash 600ms infinite;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
