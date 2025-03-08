@@ -10,13 +10,16 @@ body {
   width: 1200px;
   height: 100vh;
   margin: 0 auto;
-  background: linear-gradient(
+  background-image: linear-gradient(
     to bottom right,
     #a9d6e5,
     #61a5c2,
     #2a6f97,
     #013a63
   );
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 nav div.home {
@@ -97,11 +100,8 @@ div ul li a:hover {
 }
 
 @media screen and (max-width: 1200px) {
-  .section {
-    display: grid;
-  }
-
-  .ul {
-    display: grid;
+  .body {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
